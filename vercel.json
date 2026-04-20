@@ -17,8 +17,12 @@
       "dest": "/api/$1"
     },
     {
+      "src": "/assets/(.*)",
+      "dest": "/client/dist/assets/$1"
+    },
+    {
       "src": "/((?!api).*)",
-      "dest": "/client/$1",
+      "dest": "/client/dist/index.html",
       "continue": true
     },
     {
@@ -26,7 +30,10 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/client/index.html"
+      "dest": "/client/dist/index.html"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }

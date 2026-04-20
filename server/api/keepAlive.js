@@ -1,4 +1,4 @@
-import { createClient } from '../server/supabase';
+import { createClient } from '../server/supabase.js';
 
 // Use Service Role Key to bypass RLS for maintenance tasks
 const supabase = createClient(

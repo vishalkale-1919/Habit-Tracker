@@ -1,9 +1,13 @@
 {
   "name": "neural-habit-tracker",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "npm install --prefix client && npm run build --prefix client",
     "install": "npm install --prefix client"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.104.0"
   }
 }
