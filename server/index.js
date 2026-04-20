@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import "dotenv/config";
 import habitsRouter from "./routes/habits.js";
-import keepAliveRouter from './api/keepAlive.js';
+import keepAliveRouter from '../api/keepAlive.js';
 
 const app = express();
 app.use(cors({ origin: process.env.CLIENT_ORIGIN ?? "*" }));
